@@ -1,0 +1,39 @@
+\documentclass[12pt]{article}
+\usepackage{geometry}
+\usepackage{}
+\geometry{a4paper}
+\usepackage[parfill]{parskip} 
+\usepackage{times}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{epstopdf}
+\usepackage{listings}
+\usepackage{pdfpages}
+\usepackage{pgfplots}
+\usepackage{pgfplotstable}
+\usepackage{float}
+%\DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png}
+
+\graphicspath{ {./Imgas/} }
+
+\title{Brief Article}
+\author{The Author}
+%\date{}
+
+\begin{document}
+\newpage
+\tableofcontents
+\listoffigures
+
+\newpage
+
+\input{./Tex/Abstract}
+\input{./Tex/Introduction}
+\input{./Tex/Experimental_Details}
+\input{./Tex/Results}
+\input{./Tex/Discussion}
+\input{./Tex/Conclusion}
+
+\end{document}  
