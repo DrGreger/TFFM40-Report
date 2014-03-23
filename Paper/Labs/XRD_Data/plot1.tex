@@ -1,10 +1,11 @@
 \centering
-\begin{tikzpicture}[scale=0.9]
+\begin{tikzpicture}[scale=0.9, rotate=-90]
+	%\begin{sideways}
 	\begin{axis}[
 	scale only axis,
 	ymode=log, 
-	width=\textwidth, 
-	height=7cm
+	width=\textheight, 
+	height=\textwidth %7cm
 ]
 	\addplot [smooth,mark=*,black] table {%  plot X versus Y. This is original data.
 	X		Y 

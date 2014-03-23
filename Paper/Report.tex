@@ -6,17 +6,30 @@
 \usepackage{times}
 \usepackage[english]{babel}
 \usepackage[utf8]{inputenc}
+
 \usepackage{graphicx}
-\usepackage{amssymb}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{tikz}
+\usetikzlibrary{mindmap,arrows}
+\usepackage{rotating}
 \usepackage{epstopdf}
-\usepackage{listings}
 \usepackage{pdfpages}
 \usepackage{pgfplots}
 \usepackage{pgfplotstable}
 \usepackage{float}
+
+\usepackage{amssymb}
+\usepackage{listings}
+
 %\DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png}
 
-\graphicspath{ {./Imgas/} }
+
+\epstopdfDeclareGraphicsRule{.tif}{png}{.png}{convert #1 \OutputFile}
+\AppendGraphicsExtensions{.tif}
+
+\graphicspath{ {./Imagas/} }
+
 
 \title{Brief Article}
 \author{The Author}
